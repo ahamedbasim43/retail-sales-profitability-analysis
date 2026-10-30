@@ -1,6 +1,6 @@
 # 📊 Retail Sales & Profitability Analysis
 
-A data analytics project that analyzes retail sales, profitability, product categories, regional performance, monthly sales trends, and discount impact using **Python, SQL, Pandas, NumPy, Matplotlib, Seaborn, and Streamlit**.
+A data analytics project that analyzes retail sales, profitability, product categories, regional performance, monthly sales trends, and discount impact using **Python, SQL, Pandas, NumPy, Matplotlib, Seaborn, Plotly, and Streamlit**.
 
 The project transforms raw retail sales data into meaningful business insights through data cleaning, SQL analysis, exploratory data analysis (EDA), visualization, and an interactive dashboard.
 
@@ -16,17 +16,17 @@ The project transforms raw retail sales data into meaningful business insights t
 
 ## 🛠️ Technologies Used
 
-| Technology   | Purpose                             |
-|--------------|-------------------------------------|
-| Python       | Data analysis and processing        |
-| SQL          | Database management and queries     |
-| SQLite       | Relational database                 |
-| Pandas       | Data cleaning and manipulation      |
-| NumPy        | Numerical operations                |
-| Matplotlib   | Data visualization                  |
-| Seaborn      | Statistical visualization           |
-| Plotly       | Interactive charts                  |
-| Streamlit    | Interactive dashboard               |
+| Technology | Purpose |
+|---|---|
+| Python | Data analysis and processing |
+| SQL | Database management and queries |
+| SQLite | Relational database |
+| Pandas | Data cleaning and manipulation |
+| NumPy | Numerical operations |
+| Matplotlib | Data visualization |
+| Seaborn | Statistical visualization |
+| Plotly | Interactive charts |
+| Streamlit | Interactive dashboard |
 | Git & GitHub | Version control and project hosting |
 
 ## 📂 Project Structure
@@ -47,11 +47,14 @@ retail-sales-profitability-analysis/
 │   └── processed/
 │
 ├── database/
-│   └── retail_sales.db
 │
 ├── outputs/
 │   ├── charts/
-│   └── tables/
+│   ├── tables/
+│   └── screenshots/
+│       ├── dashboard  page 1.png
+│       ├── dashboard page 2.png
+│       └── dashboard page 3.png
 │
 ├── sql/
 │   └── analysis_queries.sql
@@ -71,41 +74,59 @@ The project analyzes the following business metrics:
 - Profit Margin
 - Average Order Value
 
+## 🖥️ Streamlit Dashboard Preview
+
+### Dashboard Overview
+
+![Dashboard Overview](outputs/screenshots/dashboard%20%20page%201.png)
+
+### Monthly Sales Analysis
+
+![Monthly Sales Analysis](outputs/screenshots/dashboard%20page%202.png)
+
+### Discount and Profit Analysis
+
+![Discount and Profit Analysis](outputs/screenshots/dashboard%20page%203.png)
+
 ## 📊 Dashboard Features
 
 The Streamlit dashboard provides:
 
-1. **Interactive Filters**
-   - Filter by year
-   - Filter by product category
-   - Filter by region
+### 1. Interactive Filters
 
-2. **KPI Cards**
-   - Total Sales
-   - Total Profit
-   - Unique Orders
-   - Profit Margin
-   - Average Order Value
+- Filter by year
+- Filter by product category
+- Filter by region
 
-3. **Data Visualizations**
-   - Sales by Product Category
-   - Profit by Region
-   - Monthly Sales Trend
-   - Discount vs Average Profit
+### 2. KPI Cards
 
-4. **Data Export**
-   - View filtered sales records.
-   - Download filtered data as CSV.
+- Total Sales
+- Total Profit
+- Unique Orders
+- Profit Margin
+- Average Order Value
+
+### 3. Data Visualizations
+
+- Sales by Product Category
+- Profit by Region
+- Monthly Sales Trend
+- Discount vs Average Profit
+
+### 4. Data Export
+
+- View filtered sales records.
+- Download filtered data as CSV.
 
 ## 🔍 Key Business Findings
 
 Based on the Sample Superstore dataset:
 
-- Total Sales: **$2,297,200.86**
-- Total Profit: **$286,397.02**
-- Total Orders: **5,009**
-- Overall Profit Margin: **12.47%**
-- Average Order Value: **$458.61**
+- **Total Sales:** $2,297,200.86
+- **Total Profit:** $286,397.02
+- **Total Orders:** 5,009
+- **Overall Profit Margin:** 12.47%
+- **Average Order Value:** $458.61
 
 ### Category Performance
 
@@ -132,7 +153,7 @@ Some higher discount levels showed negative average profit. This highlights area
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/retail-sales-profitability-analysis.git
+git clone https://github.com/ahamedbasim43/retail-sales-profitability-analysis.git
 ```
 
 ### 2. Navigate to the Project Folder
@@ -187,9 +208,7 @@ python -m streamlit run app.py
 
 Open the local dashboard in your browser:
 
-```text
 http://localhost:8501
-```
 
 ## 🗄️ SQL Analysis
 
